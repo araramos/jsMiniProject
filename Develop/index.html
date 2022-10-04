@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Password Generator</h1>
+    
+    <div>
+        <input type="text" id="password_field" name="password_field" placeholder="Enter your password here:">
+        
+        <button onclick="validatePassword()">
+            Validate Password
+        </button>
+        
+        <button onclick="generateSecurePassword()">
+            Generate a Secure Password
+        </button>
+        
+        <button onclick="copyPassword()">
+            Copy Password
+        </button>
+        
+        <button onclick="clearPassword()">
+            Clear Password
+        </button>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <ul id="validation_errors"></ul>
+  <script src="./script.js"></script>
+</body>
 </html>
