@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Password Generator Starter Code
-=======
 # jsMiniProject
 
 Through this webpage, the user can generate a secure password as well as check to see if a password is secure.
@@ -10,4 +7,3 @@ Alternatively, the user may select "Generate a secure password" which will be fo
 The applicable criteria is as follows- a capital letter, a number, a special character, and a length of at least eight while not exceeding one hundered twenty eight.
 Following this, the user has the option to copy the text to their clipboard as well as the option to clear the text from the text box.
 There is no limit to how many passwords may be checked/ generated, however, this page may only process one at a time. 
->>>>>>> 94bbd6c82e8151129cab30425f4d3947a384f135
